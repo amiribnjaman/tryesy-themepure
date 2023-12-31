@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
 
+@import "common-style.scss";
+
 
 /*
 *
@@ -19,10 +21,10 @@ $secondary_fontFamily: '';
 *Font size variables
 */
 $main_heading_fontSize: 50px;
-$sub_heading_fontSize: 40px;
-$paragraph_fontSize: 16px;
+$sub_heading_fontSize: 35px;
+$paragraph_fontSize: 14px;
 $subTitle_fontSize: 20px;
-$items_fontSize: 14px;
+$items_fontSize: 16px;
 
 /*
 *
@@ -57,7 +59,8 @@ h1{
 
 h2{
     font-size: $sub_heading_fontSize;
-
+    line-height: 1.2;
+    overflow-y: hidden;
 }
 
 p{
@@ -227,29 +230,28 @@ ul li{
 
 
 /*
-* ABOUT AND SECVICES SECTION
+* SECVICES SECTION
 * 
 */
 .services{
-    max-width: $body_content_width;
-    margin: 80px auto 40px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    @include common-layout($body_content_width);
 
     &__about{
         background: url('../Assets/about-bg.png');
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: right;
+            
+            h2 {
+                width: 60%;
+                margin: 10px 0 15px 0;
+            }
 
             h5 {
                     color: $secondary_textColor;
             }
 
-            h2 {
-                    width: 60%;
-            }
+            
 
             button {
                     background-color: transparent;
@@ -276,4 +278,80 @@ ul li{
         }
     }
     
+}
+
+
+/*
+* 
+* ABOUT SECTION
+*/
+.about{
+    @include common-layout($body_content_width);
+    padding-top: 30px;
+
+    &__left{
+        width: 95%;
+    }
+
+    &__right{
+
+        &--img{
+            width: 80%;
+
+            img{
+                height: 140px;
+            }
+        }
+
+        &--content{
+            margin: 30px 0 0 65px;
+
+            h2{
+                margin: 8px 0 15px 0;
+            }
+
+            h5 {
+                color: $secondary_textColor;
+            }
+            p{
+                font-size: 14px;
+            }
+
+            ul{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: $items_fontSize;
+
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+/*
+* 
+* ADBERTISE SECTION
+*/
+.advertise{
+    margin: 40px 0 10px 0;
+
+    h1{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 65px;
+        color: $primary_textColor;
+        opacity: 6%;
+    }
 }
