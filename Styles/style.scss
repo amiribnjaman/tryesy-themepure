@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
+
+
 /*
 *
 *Initaial Variables
 */ 
 $primary_backgroundColor: #141820;
 $secondary_backgroundColor: #D70B54;
+$third_backgroundColor: #EDF054;
 $primary_textColor: #fff;
 $secondary_textColor: #B4B7BE;
-$primary_fontFamily: '';
+$primary_fontFamily: 'Manrope',
+sans-serif;
 $secondary_fontFamily: '';
 
 /*
 *
 *Font size variables
 */
-$main_heading_fontSize: 80px;
+$main_heading_fontSize: 50px;
 $sub_heading_fontSize: 60px;
 $paragraph_fontSize: 16px;
 $subTitle_fontSize: 20px;
@@ -23,7 +28,7 @@ $items_fontSize: 14px;
 *
 *Width variables
 */
-$header_width: 1680px;
+$header_width: 90%;
 
 
 /*
@@ -34,14 +39,16 @@ $header_width: 1680px;
 *{
     overflow-x: hidden;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background: $primary_backgroundColor;
-    max-width: $header_width;
+    // max-width: $header_width;
     margin: 0 auto;
     font-family: $primary_fontFamily;
-    
+    color: $primary_textColor;
 }
 h1{
     font-size: $main_heading_fontSize;
@@ -49,6 +56,7 @@ h1{
 
 h2{
     font-size: $sub_heading_fontSize;
+
 }
 
 p{
@@ -68,7 +76,7 @@ ul li{
 * Navbar styles
 */
 .navbar{
-    max-width: 90%;
+    max-width: $header_width;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -78,9 +86,11 @@ ul li{
     &__left{
         width: 60%;
         display: flex;
+        gap: 30px;
 
         &__logo {
-                width: 200px;
+                display: flex;
+                align-items: center;
         }
 
         &__list {
@@ -89,7 +99,7 @@ ul li{
             gap: 20px;
             align-items: center;
         
-            &li {
+            li {
                 font-size: $items_fontSize;
             }
         }
@@ -123,4 +133,59 @@ ul li{
             font-weight: 600;
         }
     }
+}
+
+
+/*
+* BANNER SECTION
+* 
+*/
+.banner{
+    max-width: $header_width;
+    margin: 0px auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+    .content{
+        &__heading {
+                margin-bottom: 10px;
+                width: 70%;
+            }
+            &__para {
+                font-size: $subTitle_fontSize;
+                color: $secondary_textColor;
+            }
+    }
+    .button{
+        margin-top: 35px;
+        display: flex;
+        gap: 15px;
+
+        button{
+            background: transparent;
+            display: flex;
+            outline: none;
+            color: $primary_textColor;
+            gap: 5px;
+            outline: none;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &__view{
+            border: 1px solid $primary_textColor;
+            padding: 10px 15px;
+        }
+        &__contact{
+            border: 0;
+
+            svg{
+                background: $third_backgroundColor;
+                color: #000;
+                border-radius: 50%;
+                padding: 10px;
+            }
+        }
+    }
+            
 }

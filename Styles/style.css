@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap");
 /*
 *
 *Initaial Variables
@@ -17,17 +18,19 @@
 * {
   overflow-x: hidden;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: #141820;
-  max-width: 1680px;
   margin: 0 auto;
-  font-family: "";
+  font-family: "Manrope", sans-serif;
+  color: #fff;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 50px;
 }
 
 h2 {
@@ -63,9 +66,11 @@ ul li {
 .navbar__left {
   width: 60%;
   display: flex;
+  gap: 30px;
 }
 .navbar__left__logo {
-  width: 200px;
+  display: flex;
+  align-items: center;
 }
 .navbar__left__list {
   width: 70%;
@@ -73,7 +78,7 @@ ul li {
   gap: 20px;
   align-items: center;
 }
-.navbar__left__listli {
+.navbar__left__list li {
   font-size: 14px;
 }
 .navbar__right {
@@ -100,4 +105,51 @@ ul li {
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
+}
+
+/*
+* BANNER SECTION
+* 
+*/
+.banner {
+  max-width: 90%;
+  margin: 0px auto;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.banner .content__heading {
+  margin-bottom: 10px;
+  width: 70%;
+}
+.banner .content__para {
+  font-size: 20px;
+  color: #B4B7BE;
+}
+.banner .button {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+}
+.banner .button button {
+  background: transparent;
+  display: flex;
+  outline: none;
+  color: #fff;
+  gap: 5px;
+  outline: none;
+  align-items: center;
+  cursor: pointer;
+}
+.banner .button__view {
+  border: 1px solid #fff;
+  padding: 10px 15px;
+}
+.banner .button__contact {
+  border: 0;
+}
+.banner .button__contact svg {
+  background: #EDF054;
+  color: #000;
+  border-radius: 50%;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
