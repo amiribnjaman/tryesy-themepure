@@ -20,7 +20,7 @@ $secondary_fontFamily: '';
 *
 *Font size variables
 */
-$main_heading_fontSize: 50px;
+$main_heading_fontSize: 55px;
 $sub_heading_fontSize: 35px;
 $paragraph_fontSize: 14px;
 $subTitle_fontSize: 20px;
@@ -55,6 +55,8 @@ body{
 }
 h1{
     font-size: $main_heading_fontSize;
+    line-height: 1.2;
+    overflow-y: hidden;
 }
 
 h2{
@@ -353,5 +355,15 @@ ul li{
         font-size: 65px;
         color: $primary_textColor;
         opacity: 6%;
+    }
+
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+
+        img{
+            width: 100%;
+        }
     }
 }

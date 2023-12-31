@@ -30,7 +30,9 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 55px;
+  line-height: 1.2;
+  overflow-y: hidden;
 }
 
 h2 {
@@ -293,4 +295,13 @@ ul li {
   font-size: 65px;
   color: #fff;
   opacity: 6%;
+}
+.advertise__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.advertise__items img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
