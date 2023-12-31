@@ -1,0 +1,58 @@
+/*
+*
+*Initaial Variables
+*/ 
+$background_color: #141820;
+$primary_fontFamily: '';
+$secondary_fontFamily: '';
+
+/*
+*
+*Font size variables
+*/
+$main_heading_fontSize: 80px;
+$sub_heading_fontSize: 60px;
+$paragraph_fontSize: 16px;
+$subTitle_fontSize: 20px;
+$items_fontSize: 14px;
+
+/*
+*
+*Width variables
+*/
+$header_width: 1680px;
+
+
+/*
+*
+* Primary Styles
+*/
+
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body{
+    background: $background_color;
+    max-width: $header_width;
+    margin: 0 auto;
+    font-family: $primary_fontFamily;
+}
+h1{
+    font-size: $main_heading_fontSize;
+}
+
+h2{
+    font-size: $sub_heading_fontSize;
+}
+
+p{
+    font-size: $paragraph_fontSize;
+}
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}

@@ -1,0 +1,47 @@
+/*
+*
+*Initaial Variables
+*/
+/*
+*
+*Font size variables
+*/
+/*
+*
+*Width variables
+*/
+/*
+*
+* Primary Styles
+*/
+* {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141820;
+  max-width: 1680px;
+  margin: 0 auto;
+  font-family: "";
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}/*# sourceMappingURL=styel.css.map */
