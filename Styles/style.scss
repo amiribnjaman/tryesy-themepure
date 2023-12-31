@@ -1,0 +1,126 @@
+/*
+*
+*Initaial Variables
+*/ 
+$primary_backgroundColor: #141820;
+$secondary_backgroundColor: #D70B54;
+$primary_textColor: #fff;
+$secondary_textColor: #B4B7BE;
+$primary_fontFamily: '';
+$secondary_fontFamily: '';
+
+/*
+*
+*Font size variables
+*/
+$main_heading_fontSize: 80px;
+$sub_heading_fontSize: 60px;
+$paragraph_fontSize: 16px;
+$subTitle_fontSize: 20px;
+$items_fontSize: 14px;
+
+/*
+*
+*Width variables
+*/
+$header_width: 1680px;
+
+
+/*
+*
+* Primary Styles
+*/
+
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    background: $primary_backgroundColor;
+    max-width: $header_width;
+    margin: 0 auto;
+    font-family: $primary_fontFamily;
+    
+}
+h1{
+    font-size: $main_heading_fontSize;
+}
+
+h2{
+    font-size: $sub_heading_fontSize;
+}
+
+p{
+    font-size: $paragraph_fontSize;
+}
+a{
+    text-decoration: none;
+    color: $primary_textColor;
+}
+ul li{
+    list-style: none;
+    display: flex;
+}
+
+/*
+*
+* Navbar styles
+*/
+.navbar{
+    max-width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    &__left{
+        width: 60%;
+        display: flex;
+
+        &__logo {
+                width: 200px;
+        }
+
+        &__list {
+            width: 70%;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        
+            &li {
+                font-size: $items_fontSize;
+            }
+        }
+    }
+    
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &__search{
+            width: 110px;
+            display: flex;
+
+            input{
+                background: transparent;
+                border: 0;
+                outline: none;
+                color: $primary_textColor;
+            }
+        }
+
+        &__button{
+            background: $secondary_backgroundColor;
+            padding: 10px 20px;
+            border: 0;
+            outline: none;
+            color: $primary_textColor;
+            font-size: $paragraph_fontSize;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+}
