@@ -1,37 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
-
+@import "variables.scss";
 @import "common-style.scss";
-
-
-/*
-*
-*Initaial Variables
-*/ 
-$primary_backgroundColor: #141820;
-$secondary_backgroundColor: #D70B54;
-$third_backgroundColor: #EDF054;
-$primary_textColor: #fff;
-$secondary_textColor: #B4B7BE;
-$primary_fontFamily: 'Manrope',
-sans-serif;
-$secondary_fontFamily: '';
-
-/*
-*
-*Font size variables
-*/
-$main_heading_fontSize: 55px;
-$sub_heading_fontSize: 35px;
-$paragraph_fontSize: 14px;
-$subTitle_fontSize: 20px;
-$items_fontSize: 16px;
-
-/*
-*
-*Width variables
-*/
-$header_width: 90%;
-$body_content_width: 70%;
 
 
 /*
@@ -64,6 +32,11 @@ h2{
     line-height: 1.2;
     overflow-y: hidden;
 }
+h5{
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: $secondary_textColor;
+}
 
 p{
     font-size: $paragraph_fontSize;
@@ -87,12 +60,12 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 
     &__left{
         width: 60%;
         display: flex;
-        gap: 30px;
+        gap: 50px;
 
         &__logo {
                 display: flex;
@@ -102,11 +75,12 @@ ul li{
         &__list {
             width: 70%;
             display: flex;
-            gap: 20px;
+            gap: 25px;
             align-items: center;
         
             li {
                 font-size: $items_fontSize;
+                font-weight: 500;
             }
         }
     }
@@ -237,12 +211,15 @@ ul li{
 */
 .services{
     @include common-layout($body_content_width);
+    padding-top: 20px;
+    
 
     &__about{
         background: url('../Assets/about-bg.png');
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: right;
+        background-position-y: -10px;
             
             h2 {
                 width: 60%;
@@ -253,8 +230,7 @@ ul li{
                     color: $secondary_textColor;
             }
 
-            
-
+        
             button {
                     background-color: transparent;
                     border: 1px solid $primary_textColor;
@@ -351,6 +327,7 @@ ul li{
 
     h1{
         margin-top: 50px;
+        margin-bottom: 10px;
         text-align: center;
         font-size: 65px;
         color: $primary_textColor;
@@ -362,8 +339,62 @@ ul li{
         grid-template-columns: repeat(4, 1fr);
         column-gap: 10px;
 
-        img{
-            width: 100%;
+        &--img:nth-child(2){
+            position: relative;
+        }
+
+        &--tag {
+                    position: absolute;
+                    bottom: 35px;
+                    left: 35px;
+                    background: #fff;
+                    color: #000;
+                    padding: 10px 15px;
+        
+                }
+
+        &--img{
+            
+            img{
+                width: 100%; 
+            }
+        }
+    }
+}
+
+/*
+* 
+* EXPERTISE SECTION
+*/
+.expertise{
+    @include common-layout($body_content_width);
+
+    &__left{
+        width: 85%;
+        h2{
+            margin: 8px 0 25px 0;
+        }
+
+        p{
+            margin-bottom: 20px;
+            color: $secondary_textColor;
+
+        }
+        a{
+            margin-top: 10px;
+
+            span {
+                padding: 8px;
+                border-radius: 50%;
+                background: #22262D;
+                text-align: center;
+                font-size: $paragraph_fontSize;
+
+                img{
+                    // width: 18px;
+                    // height: 18px;
+                }
+            }
         }
     }
 }
