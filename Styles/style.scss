@@ -259,5 +259,21 @@ ul li{
                     margin-top: 25px;
             }
     }
+
+    &__items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        row-gap: 80px;
+
+        img{
+            width: 25px;
+            height: 25px;
+        }
+
+        h4{
+            width: 65%;
+        }
+    }
     
 }

@@ -213,4 +213,17 @@ ul li {
   color: #fff;
   padding: 10px 25px;
   margin-top: 25px;
+}
+.services__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  row-gap: 80px;
+}
+.services__items img {
+  width: 25px;
+  height: 25px;
+}
+.services__items h4 {
+  width: 65%;
 }/*# sourceMappingURL=style.css.map */
