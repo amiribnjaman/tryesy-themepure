@@ -189,3 +189,32 @@ ul li{
     }
             
 }
+
+.banner-img{
+    height: 500px;
+
+    img{
+        width: 100%;
+        margin-top: -230px;
+        height: 900px;
+        z-index: 10;
+        position: absolute;
+
+    }
+}
+.subline {
+    background-color: $secondary_backgroundColor;
+    z-index: 50;
+    margin-top: 27px;
+
+    ul{
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+            font-size: $paragraph_fontSize;
+        }
+    }
+}
