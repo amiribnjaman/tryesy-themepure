@@ -735,7 +735,7 @@ ul li {
 }
 .top__desc p {
   margin: 30px 0;
-  font-size: 13px;
+  font-size: 15px;
   color: #AFB2B8;
 }
 .top__desc button {
@@ -746,12 +746,13 @@ ul li {
   outline: none;
   color: #fff;
   cursor: pointer;
+  font-size: 16px;
 }
 .top__desc button:hover {
   color: #D70B54;
 }
 .top__cards h6 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 40px;
   margin-left: 7px;
 }
@@ -761,7 +762,7 @@ ul li {
   gap: 10px;
 }
 .top__cards ul li {
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 7px;
