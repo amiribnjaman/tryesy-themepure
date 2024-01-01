@@ -93,6 +93,7 @@ ul li{
         &__search{
             width: 110px;
             display: flex;
+            gap: 10px;
 
             input{
                 background: transparent;
@@ -175,7 +176,7 @@ ul li{
 
     img{
         width: 100%;
-        margin-top: -230px;
+        margin-top: -260px;
         height: 900px;
         z-index: 10;
         position: absolute;
@@ -190,7 +191,7 @@ ul li{
 .subline {
     background-color: $secondary_backgroundColor;
     z-index: 50;
-    margin-top: 27px;
+    margin-top: -4px;
 
     ul{
         display: flex;
@@ -497,7 +498,7 @@ ul li{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
-        margin-top: 10px;
+        margin-top: 30px;
         overflow-y: hidden;
         
 
@@ -575,10 +576,17 @@ ul li{
 * TESTIMONIAL SECTION
 */
 .testimonial{
-    @include common-layout($body_content_width);
+    background-color: #171B23;
+    margin-top: 95px;
+    &__body{
+        margin: 0 0 0 190px ;
+        display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+    }
 
     &__header{
-        margin-top: 50px;
+        margin-top: 60px;
         h2{
             width: 80%;
         }
@@ -605,11 +613,11 @@ ul li{
     }
 
         &__video {
-            height: 500px;
-            width: 427px;
+            height: 600px;
+            width: 100%;
     
             img {
-                height: 490px;
+                height: 595px;
             }
         }
 }
@@ -641,9 +649,8 @@ ul li{
                 padding-bottom: 20px;
             }
 
-            &--card:nth-child(2){
+            &--card:hover{
                 border-bottom: 1px solid #D70B54;
-;
 
                 h4{
                     color: #D70B54;
@@ -756,7 +763,7 @@ ul li{
 */
 .top{
     width: $body_content_width;
-    margin: 0 auto 20px;
+    margin: 30px auto 20px;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(5, 1fr);
@@ -793,7 +800,7 @@ ul li{
             flex-direction: column;
             gap: 10px;
             li{
-                font-size: 13px;
+                font-size: 14px;
                 display: flex;
                 align-items: center;
                 gap: 7px;
@@ -803,6 +810,47 @@ ul li{
                 color: #D70B54;
                 cursor: pointer;
             }
+        }
+    }
+}
+
+
+/*
+* 
+* FOOTER BOTTOM/COPYRIGHT SECTION
+*/
+.copyright{
+    width: $body_content_width;
+    margin: 0 auto;
+    background-color: #1B1F28;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-between;
+
+    &__socialicon{
+        display: flex;
+        gap: 20px;
+
+        p{
+            font-size: 14px;
+            color: #828386;
+        }
+
+        img{
+            width: 19px;
+            height: 19px;
+            padding: 5px;
+            background-color: $primary_textColor;
+            opacity: 6%;
+            color: $primary_textColor;
+        }
+    }
+
+    &__content{
+        font-size: $paragraph_fontSize;
+        color: #828386;
+        span{
+            color: $primary_textColor
         }
     }
 }
