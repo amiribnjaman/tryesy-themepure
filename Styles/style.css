@@ -672,7 +672,7 @@ ul li {
 */
 .top {
   width: 70%;
-  margin: 30px auto 20px;
+  margin: 30px auto 50px;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(5, 1fr);
