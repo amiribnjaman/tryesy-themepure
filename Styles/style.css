@@ -205,14 +205,13 @@ ul li {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
-  padding-top: 20px;
+  margin-top: 0;
 }
 .services__about {
   background: url("../Assets/about-bg.png");
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: right;
-  background-position-y: -10px;
 }
 .services__about h2 {
   width: 60%;
@@ -220,6 +219,8 @@ ul li {
 }
 .services__about h5 {
   color: #B4B7BE;
+  margin-top: 50px;
+  padding-top: 30px;
 }
 .services__about button {
   background-color: transparent;
@@ -233,6 +234,8 @@ ul li {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   row-gap: 80px;
+  margin-top: 50px;
+  padding-top: 30px;
 }
 .services__items img {
   width: 25px;
@@ -405,7 +408,7 @@ ul li {
 
 /*
 * 
-* EXPERTISE SECTION
+* COUNTER SECTION
 */
 .counter {
   max-width: 70%;
@@ -415,7 +418,7 @@ ul li {
 }
 .counter__card {
   border-left: 1px solid #EDF054;
-  padding: 5px 5px 5px 20px;
+  padding: 5px 5px 5px 25px;
 }
 .counter__card h3 {
   font-size: 35px;
@@ -425,4 +428,83 @@ ul li {
   text-transform: uppercase;
   font-size: 12px;
   color: #B4B7BE;
+}
+
+/*
+* 
+* TEAM SECTION
+*/
+.team {
+  max-width: 70%;
+  margin: 150px auto 40px;
+  text-align: center;
+}
+.team__heading {
+  width: 50%;
+  margin: 0 auto;
+}
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  overflow-y: hidden;
+}
+.team__members--card {
+  background-color: #32363F;
+  width: 100%;
+  height: 100%;
+  width: 208px;
+  height: 220px;
+  overflow: hidden;
+  scrollbar-width: 0;
+  position: relative;
+}
+.team__members--card img {
+  width: 100%;
+  height: auto;
+}
+.team__members--card__tag {
+  visibility: hidden;
+}
+.team__members--card:hover {
+  cursor: pointer;
+  height: 220px;
+}
+.team__members--card:hover img {
+  opacity: 30%;
+  width: 100%;
+  height: 100%;
+}
+.team__members--card:hover div {
+  width: 190px;
+  visibility: visible;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  z-index: 100;
+  background-color: #fff;
+  color: #141820;
+  text-align: left;
+  padding: 10px 15px;
+}
+.team__members--card:nth-child(8) {
+  display: flex;
+  flex-direction: column;
+  background-color: #32363F;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.team__members--card:nth-child(8) span {
+  background: #EDF054;
+  padding: 7px 11px;
+  border-radius: 100%;
+  color: #000;
+}
+.team__members--card:nth-child(8) span svg {
+  margin-top: 2px;
+}
+.team__members--card:nth-child(8) p {
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

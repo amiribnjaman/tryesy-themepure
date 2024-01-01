@@ -211,7 +211,8 @@ ul li{
 */
 .services{
     @include common-layout($body_content_width);
-    padding-top: 20px;
+    // padding-top: 20px;
+    margin-top: 0;
     
 
     &__about{
@@ -219,7 +220,6 @@ ul li{
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: right;
-        background-position-y: -10px;
             
             h2 {
                 width: 60%;
@@ -228,6 +228,8 @@ ul li{
 
             h5 {
                     color: $secondary_textColor;
+                    margin-top: 50px;
+                    padding-top: 30px;
             }
 
         
@@ -245,6 +247,8 @@ ul li{
         grid-template-columns: 1fr 1fr;
         gap: 30px;
         row-gap: 80px;
+        margin-top: 50px;
+        padding-top: 30px;
 
         img{
             width: 25px;
@@ -449,7 +453,7 @@ ul li{
 
 /*
 * 
-* EXPERTISE SECTION
+* COUNTER SECTION
 */
 .counter{
     max-width: $body_content_width;
@@ -459,7 +463,7 @@ ul li{
 
     &__card{
         border-left: 1px solid $third_backgroundColor;
-        padding: 5px 5px 5px 20px;
+        padding: 5px 5px 5px 25px;
 
         h3 {
             font-size: $sub_heading_fontSize;
@@ -473,4 +477,95 @@ ul li{
     }
 
     
+}
+
+/*
+* 
+* TEAM SECTION
+*/
+.team{
+    max-width: $body_content_width;
+    margin: 150px auto 40px;
+    text-align: center;
+
+    &__heading{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &__members{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+        overflow-y: hidden;
+        
+
+        &--card{
+            background-color: #32363F;
+            width: 100%;
+            height: 100%;
+            width: 208px;
+            height: 220px;
+            overflow: hidden;
+            scrollbar-width: 0;
+            position: relative;
+
+            img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            &__tag{
+                visibility: hidden;
+            }
+        }
+        &--card:hover{
+            cursor: pointer;
+            height: 220px;
+
+            img {
+                opacity: 30%;
+                width: 100%;
+                height: 100%;
+            }
+
+            div{
+                width: 190px;
+                visibility: visible;
+                position: absolute;
+                bottom: 20px;
+                left: 10px;
+                z-index: 100;
+                background-color: $primary_textColor;
+                color: $primary_backgroundColor;
+                text-align: left;
+                padding: 10px 15px;
+            }
+        }
+            &--card:nth-child(8){
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #32363F;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    span{
+                        background: $third_backgroundColor;
+                        padding: 7px 11px;
+                        border-radius: 100%;
+                        color: #000;
+
+                        svg{
+                            margin-top: 2px;
+                        }
+                    }
+
+                    p{
+                        margin-top: 10px;
+                    }
+                }
+
+    }
 }
