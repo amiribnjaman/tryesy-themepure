@@ -713,17 +713,18 @@ ul li{
         }
 
         &--subscribe {
-            background-color: $primary_textColor;
+            background-color: #fff;
             width: 350px;
             margin: 20px auto;
             display: flex;
             justify-content: space-between;
 
             input{
-                background-color: $primary_textColor;
+                background-color: #fff;
                 padding: 10px 20px;
                 border: 1px solid $primary_textColor;
                 outline: none;
+                color: $secondary_textColor;
             }
             button{
                 background-color: #44E8F2;
@@ -744,6 +745,63 @@ ul li{
             img{
                 width: 20px;
                 height: 20px;
+            }
+        }
+    }
+}
+
+/*
+* 
+* FOOTER TOP SECTION
+*/
+.top{
+    width: $body_content_width;
+    margin: 0 auto 20px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+
+    &__desc{
+        grid-column: span 2;
+
+        p{
+            margin: 30px 0;
+            font-size: 13px;
+            color: #AFB2B8;
+        }
+
+        button{
+            display: flex;
+            gap: 10px;
+            background: transparent;
+            border: 0;
+            outline: none;
+            color: $primary_textColor;
+            cursor: pointer;
+        }
+    }
+
+    &__cards{
+        h6{
+            font-size: $paragraph_fontSize;
+            margin-bottom: 40px;
+            margin-left: 7px;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                color: #AFB2B8;
+            }
+            li:hover{
+                color: #D70B54;
+                cursor: pointer;
             }
         }
     }
