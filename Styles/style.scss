@@ -31,6 +31,7 @@ h2{
     font-size: $sub_heading_fontSize;
     line-height: 1.2;
     overflow-y: hidden;
+    margin: 10px 0;
 }
 h5{
     letter-spacing: 2px;
@@ -122,28 +123,33 @@ ul li{
 * 
 */
 .banner{
-    max-width: $header_width;
-    margin: 0px auto;
-    margin-top: 70px;
-    margin-bottom: 40px;
+    margin: 90px auto 60px;
 
-    .content{
+    &__topper{
+        width: $header_width;
+         margin: 0 auto;
+        }
+    .content {
+        width: 70%;
+        
         &__heading {
-                margin-bottom: 10px;
-                width: 70%;
-            }
-            &__para {
-                font-size: $subTitle_fontSize;
-                color: $secondary_textColor;
-            }
+            margin-bottom: 10px;
+        
+        }
+        
+        &__para {
+            font-size: $subTitle_fontSize;
+            color: $secondary_textColor;
+            // margin-top: 20px;
+        }
     }
-    .button{
+    .button {
         margin-top: 35px;
         display: flex;
         gap: 15px;
         cursor: pointer;
-
-        button{
+    
+        button {
             background: transparent;
             display: flex;
             outline: none;
@@ -153,17 +159,19 @@ ul li{
             align-items: center;
             cursor: pointer;
             z-index: 100;
+            font-size: 16px;
         }
-
-        &__view{
+    
+        &__view {
             border: 1px solid $primary_textColor;
             padding: 10px 15px;
             cursor: pointer;
         }
-        &__contact{
+    
+        &__contact {
             border: 0;
-
-            svg{
+    
+            svg {
                 background: $third_backgroundColor;
                 color: #000;
                 border-radius: 50%;
@@ -171,15 +179,25 @@ ul li{
             }
         }
     }
+
+    &__landmark-text {
+        position: absolute;
+        z-index: 100;
+        top: 427px;
+        right: 150px;
+    }
             
 }
-
+/*
+* BANNER IMAGE
+* 
+*/
 .banner-img{
     height: 500px;
 
     img{
         width: 100%;
-        margin-top: -260px;
+        margin-top: -220px;
         height: 900px;
         z-index: 10;
         position: absolute;
@@ -193,8 +211,8 @@ ul li{
 */
 .subline {
     background-color: $secondary_backgroundColor;
-    z-index: 50;
-    margin-top: -4px;
+    z-index: 150;
+    margin-top: -24px;
 
     ul{
         display: flex;
@@ -277,6 +295,15 @@ ul li{
 
     &__left{
         width: 95%;
+        position: relative;
+        overflow-x: visible;
+        padding-right: 20px;
+
+        &__landmark-text{
+            position: absolute;
+            right: -61px;
+            top: 37%;
+        }
     }
 
     &__right{
@@ -584,12 +611,14 @@ ul li{
     &__body{
         margin: 0 0 0 190px ;
         display: grid;
-            gap: 20px;
-            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            grid-template-columns: repeat(5, 1fr);
     }
 
     &__header{
+        grid-column: span 2;
         margin-top: 60px;
+        margin-right: 20px;
         h2{
             width: 80%;
         }
@@ -610,12 +639,18 @@ ul li{
             margin-top: 30px;
             display: flex;
             gap: 20px;
+
+            p{
+                color: #828386;
+                margin-top: 5px;
+            }
         }
 
         
     }
 
         &__video {
+            grid-column: span 3;
             height: 600px;
             width: 100%;
     
@@ -641,7 +676,7 @@ ul li{
         }
 
         &__body{
-            margin-top: 15px;
+            margin-top: 40px;
             text-align: left;
             display: grid;
             grid-template-columns: repeat(3, 1fr);

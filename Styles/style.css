@@ -39,6 +39,7 @@ h2 {
   font-size: 35px;
   line-height: 1.2;
   overflow-y: hidden;
+  margin: 10px 0;
 }
 
 h5 {
@@ -124,14 +125,17 @@ ul li {
 * 
 */
 .banner {
-  max-width: 90%;
-  margin: 0px auto;
-  margin-top: 70px;
-  margin-bottom: 40px;
+  margin: 90px auto 60px;
+}
+.banner__topper {
+  width: 90%;
+  margin: 0 auto;
+}
+.banner .content {
+  width: 70%;
 }
 .banner .content__heading {
   margin-bottom: 10px;
-  width: 70%;
 }
 .banner .content__para {
   font-size: 17px;
@@ -153,6 +157,7 @@ ul li {
   align-items: center;
   cursor: pointer;
   z-index: 100;
+  font-size: 16px;
 }
 .banner .button__view {
   border: 1px solid #fff;
@@ -168,13 +173,23 @@ ul li {
   border-radius: 50%;
   padding: 10px;
 }
+.banner__landmark-text {
+  position: absolute;
+  z-index: 100;
+  top: 427px;
+  right: 150px;
+}
 
+/*
+* BANNER IMAGE
+* 
+*/
 .banner-img {
   height: 500px;
 }
 .banner-img img {
   width: 100%;
-  margin-top: -260px;
+  margin-top: -220px;
   height: 900px;
   z-index: 10;
   position: absolute;
@@ -186,8 +201,8 @@ ul li {
 */
 .subline {
   background-color: #D70B54;
-  z-index: 50;
-  margin-top: -4px;
+  z-index: 150;
+  margin-top: -24px;
 }
 .subline ul {
   display: flex;
@@ -263,6 +278,14 @@ ul li {
 }
 .about__left {
   width: 95%;
+  position: relative;
+  overflow-x: visible;
+  padding-right: 20px;
+}
+.about__left__landmark-text {
+  position: absolute;
+  right: -61px;
+  top: 37%;
 }
 .about__right--img {
   width: 80%;
@@ -524,11 +547,13 @@ ul li {
 .testimonial__body {
   margin: 0 0 0 190px;
   display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  grid-template-columns: repeat(5, 1fr);
 }
 .testimonial__header {
+  grid-column: span 2;
   margin-top: 60px;
+  margin-right: 20px;
 }
 .testimonial__header h2 {
   width: 80%;
@@ -548,7 +573,12 @@ ul li {
   display: flex;
   gap: 20px;
 }
+.testimonial__header--user p {
+  color: #828386;
+  margin-top: 5px;
+}
 .testimonial__video {
+  grid-column: span 3;
   height: 600px;
   width: 100%;
 }
@@ -571,7 +601,7 @@ ul li {
   text-align: center;
 }
 .latest-post__body {
-  margin-top: 15px;
+  margin-top: 40px;
   text-align: left;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
