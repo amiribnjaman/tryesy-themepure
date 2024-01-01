@@ -527,7 +527,7 @@ ul li {
   width: 80%;
 }
 .testimonial__header span {
-  margin-top: 35px;
+  margin-top: 30px;
   display: inline-block;
 }
 .testimonial__header span img {
@@ -547,4 +547,57 @@ ul li {
 }
 .testimonial__video img {
   height: 490px;
+}
+
+/*
+* 
+* TESTIMONIAL SECTION
+*/
+.latest-post {
+  max-width: 70%;
+  margin: 150px auto 40px;
+  text-align: center;
+}
+.latest-post__heading {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.latest-post__body {
+  margin-top: 15px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.latest-post__body--card {
+  padding-bottom: 20px;
+}
+.latest-post__body--card:nth-child(2) {
+  border-bottom: 1px solid #D70B54;
+}
+.latest-post__body--card:nth-child(2) h4 {
+  color: #D70B54;
+}
+.latest-post__body--img {
+  width: 100%;
+}
+.latest-post__body--img img {
+  width: 100%;
+}
+.latest-post__body h6 {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  opacity: 60%;
+}
+.latest-post__body h4 {
+  width: 95%;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.latest-post__body__userinfo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

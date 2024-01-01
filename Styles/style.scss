@@ -584,7 +584,7 @@ ul li{
         }
 
         span{
-            margin-top: 35px;
+            margin-top: 30px;
             display: inline-block;
 
             img{
@@ -612,4 +612,74 @@ ul li{
                 height: 490px;
             }
         }
+}
+
+/*
+* 
+* TESTIMONIAL SECTION
+*/
+.latest-post{
+    max-width: $body_content_width;
+        margin: 150px auto 40px;
+        text-align: center;
+    
+        &__heading {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__body{
+            margin-top: 15px;
+            text-align: left;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+
+            &--card{
+                padding-bottom: 20px;
+            }
+
+            &--card:nth-child(2){
+                border-bottom: 1px solid #D70B54;
+;
+
+                h4{
+                    color: #D70B54;
+                }
+            }
+
+            &--img{
+                width: 100%;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            
+
+            h6{
+                display: flex;
+                gap: 10px;
+                margin: 10px 0;
+                opacity: 60%;
+            }
+
+            h4{
+                width: 95%;
+                margin-bottom: 20px;
+                color: $primary_textColor;
+            }
+            
+
+            &__userinfo{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+        
+        }
+
+        
 }
