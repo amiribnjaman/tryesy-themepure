@@ -348,13 +348,54 @@ ul li {
   margin-bottom: 20px;
   color: #B4B7BE;
 }
-.expertise__left a {
+.expertise__left--email {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+}
+.expertise__left--email__icon {
+  background: #22262D;
+  padding: 9px;
+  border-radius: 50%;
+  display: flex;
+}
+.expertise__right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 40px;
+}
+.expertise__right__progressarea {
+  width: 80%;
+}
+.expertise__right__progressarea--title {
+  display: flex;
+  justify-content: space-between;
+}
+.expertise__right__progressarea--title h4 {
+  font-size: 18px;
+}
+.expertise__right__progressarea--bar {
+  width: 100%;
+  background: #2b2f36;
+  height: 6px;
+  border-radius: 10px;
   margin-top: 10px;
 }
-.expertise__left a span {
-  padding: 8px;
-  border-radius: 50%;
-  background: #22262D;
-  text-align: center;
-  font-size: 14px;
+.expertise__right__progressarea--bar__progress {
+  background: #3FABE3;
+  height: 6px;
+}
+.expertise__right__progressarea--bar__progress:nth-child(1) {
+  width: 75%;
+}
+.expertise__right__progressarea--bar__progress:nth-child(2) {
+  width: 82%;
+}
+.expertise__right__progressarea--bar__progress:nth-child(3) {
+  width: 64%;
+}
+.expertise__right__progressarea--bar__progress:nth-child(4) {
+  width: 72%;
 }/*# sourceMappingURL=style.css.map */
