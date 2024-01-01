@@ -569,6 +569,7 @@ ul li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  cursor: pointer;
 }
 .latest-post__body--card {
   padding-bottom: 20px;
@@ -600,4 +601,62 @@ ul li {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+/*
+* 
+* TESTIMONIAL SECTION
+*/
+.newsletter {
+  width: 70%;
+  background: url("../Assets/newsletter-bg.png");
+  height: 450px;
+  opacity: 80%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.newsletter__body {
+  width: 60%;
+}
+.newsletter__body h3 {
+  font-size: 30px;
+}
+.newsletter__body h3 span {
+  color: #EDF054;
+}
+.newsletter__body--subscribe {
+  background-color: #fff;
+  width: 350px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter__body--subscribe input {
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  outline: none;
+}
+.newsletter__body--subscribe button {
+  background-color: #44E8F2;
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  margin: 3px;
+}
+.newsletter__body--bottom {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
+.newsletter__body--bottom img {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */

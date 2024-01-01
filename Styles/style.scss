@@ -635,6 +635,7 @@ ul li{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
+            cursor: pointer;
 
             &--card{
                 padding-bottom: 20px;
@@ -682,4 +683,68 @@ ul li{
         }
 
         
+}
+
+/*
+* 
+* TESTIMONIAL SECTION
+*/
+.newsletter{
+    width: $body_content_width;
+    background: url('../Assets/newsletter-bg.png');
+    height: 450px;
+    opacity: 80%;
+    margin: 80px auto;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+
+    &__body{
+        width: 60%;
+
+        h3{
+            font-size: 30px;
+            span{
+                color: $third_backgroundColor;
+            }
+        }
+
+        &--subscribe {
+            background-color: $primary_textColor;
+            width: 350px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+
+            input{
+                background-color: $primary_textColor;
+                padding: 10px 20px;
+                border: 1px solid $primary_textColor;
+                outline: none;
+            }
+            button{
+                background-color: #44E8F2;
+                padding: 10px 20px;
+                border: 0;
+                outline: none;
+                margin: 3px;
+            }
+        }
+
+        &--bottom{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+            align-items: center;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 }
