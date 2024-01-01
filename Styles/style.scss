@@ -15,7 +15,7 @@
 }
 
 body{
-    background: $primary_backgroundColor;
+    background: $bg-primary;
     // max-width: $header_width;
     margin: 0 auto;
     font-family: $primary_fontFamily;
@@ -57,7 +57,7 @@ ul li{
 */
 .navbar{
     max-width: $header_width;
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,18 +94,24 @@ ul li{
         &__search{
             width: 110px;
             display: flex;
-            gap: 10px;
+            gap: 8px;
 
             input{
                 background: transparent;
                 border: 0;
                 outline: none;
                 color: $primary_textColor;
+
+                
+            }
+            ::placeholder {
+                color: #fff;
+                opacity: 60%;
             }
         }
 
         &__button{
-            background: $secondary_backgroundColor;
+            background: $bg-btn-secondary;
             padding: 10px 20px;
             border: 0;
             outline: none;
@@ -167,12 +173,17 @@ ul li{
             padding: 10px 15px;
             cursor: pointer;
         }
+        &__view:hover{
+            background: $bg-btn-secondary;
+            color: $primary_textColor;
+            border: 1px solid $bg-btn-secondary
+        }
     
         &__contact {
             border: 0;
     
             svg {
-                background: $third_backgroundColor;
+                background: $bg-btn-primary;
                 color: #000;
                 border-radius: 50%;
                 padding: 10px;
@@ -183,7 +194,7 @@ ul li{
     &__landmark-text {
         position: absolute;
         z-index: 100;
-        top: 427px;
+        top: 436px;
         right: 150px;
     }
             
@@ -210,7 +221,7 @@ ul li{
 * 
 */
 .subline {
-    background-color: $secondary_backgroundColor;
+    background-color: $bg-btn-secondary;
     z-index: 150;
     margin-top: -24px;
 
@@ -261,6 +272,11 @@ ul li{
                     color: $primary_textColor;
                     padding: 10px 25px;
                     margin-top: 25px;
+                    cursor: pointer;
+            }
+            button:hover{
+                background-color: $bg-btn-secondary;
+                border: 1px solid$bg-btn-secondary;
             }
     }
 
@@ -493,7 +509,7 @@ ul li{
     justify-content: space-between;
 
     &__card{
-        border-left: 1px solid $third_backgroundColor;
+        border-left: 1px solid $bg-btn-primary;
         padding: 5px 5px 5px 25px;
 
         h3 {
@@ -569,7 +585,7 @@ ul li{
                 left: 10px;
                 z-index: 100;
                 background-color: $primary_textColor;
-                color: $primary_backgroundColor;
+                color: $bg-primary;
                 text-align: left;
                 padding: 10px 15px;
             }
@@ -583,7 +599,7 @@ ul li{
                     cursor: pointer;
 
                     span{
-                        background: $third_backgroundColor;
+                        background: $bg-btn-primary;
                         padding: 7px 11px;
                         border-radius: 100%;
                         color: #000;
@@ -606,7 +622,7 @@ ul li{
 * TESTIMONIAL SECTION
 */
 .testimonial{
-    background-color: #171B23;
+    background-color: $bg-secondary;
     margin-top: 95px;
     &__body{
         margin: 0 0 0 190px ;
@@ -688,10 +704,10 @@ ul li{
             }
 
             &--card:hover{
-                border-bottom: 1px solid #D70B54;
+                border-bottom: 1px solid $bg-btn-secondary;
 
                 h4{
-                    color: #D70B54;
+                    color: $bg-btn-secondary;
                 }
             }
 
@@ -754,7 +770,7 @@ ul li{
             font-size: 30px;
             margin: 25px 0;
             span{
-                color: $third_backgroundColor;
+                color: $bg-btn-primary;
             }
         }
 
@@ -772,12 +788,16 @@ ul li{
                 outline: none;
                 color: $secondary_textColor;
             }
+            ::placeholder{
+                // color: #fff;
+            }
             button{
                 background-color: #44E8F2;
                 padding: 10px 20px;
                 border: 0;
                 outline: none;
                 margin: 3px;
+                cursor: pointer;
             }
         }
 
@@ -826,6 +846,9 @@ ul li{
             color: $primary_textColor;
             cursor: pointer;
         }
+        button:hover{
+            color: $bg-btn-secondary;
+        }
     }
 
     &__cards {
@@ -849,7 +872,7 @@ ul li{
             }
 
             li:hover {
-                color: #D70B54;
+                color: $bg-btn-secondary;
                 cursor: pointer;
             }
         }
@@ -864,8 +887,8 @@ ul li{
 .copyright{
     width: $body_content_width;
     margin: 0 auto;
-    background-color: #1B1F28;
-    padding: 25px 15px;
+    background-color: $bg-third;
+    padding: 20px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -890,7 +913,7 @@ ul li{
             border-radius: 50%;
         }
         svg:hover{
-            background-color: #D70B54;
+            background-color: $bg-btn-secondary;
                 color: #fff;
         }
     }

@@ -68,7 +68,7 @@ ul li {
 */
 .navbar {
   max-width: 90%;
-  margin: 20px auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,13 +101,21 @@ ul li {
 .navbar__right__search {
   width: 110px;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 .navbar__right__search input {
   background: transparent;
   border: 0;
   outline: none;
   color: #fff;
+}
+.navbar__right__search ::-moz-placeholder {
+  color: #fff;
+  opacity: 60%;
+}
+.navbar__right__search ::placeholder {
+  color: #fff;
+  opacity: 60%;
 }
 .navbar__right__button {
   background: #D70B54;
@@ -164,6 +172,11 @@ ul li {
   padding: 10px 15px;
   cursor: pointer;
 }
+.banner .button__view:hover {
+  background: #D70B54;
+  color: #fff;
+  border: 1px solid #D70B54;
+}
 .banner .button__contact {
   border: 0;
 }
@@ -176,7 +189,7 @@ ul li {
 .banner__landmark-text {
   position: absolute;
   z-index: 100;
-  top: 427px;
+  top: 436px;
   right: 150px;
 }
 
@@ -247,6 +260,11 @@ ul li {
   color: #fff;
   padding: 10px 25px;
   margin-top: 25px;
+  cursor: pointer;
+}
+.services__about button:hover {
+  background-color: #D70B54;
+  border: 1px solid #D70B54;
 }
 .services__items {
   display: grid;
@@ -687,6 +705,7 @@ ul li {
   border: 0;
   outline: none;
   margin: 3px;
+  cursor: pointer;
 }
 .newsletter__body--bottom {
   display: flex;
@@ -728,6 +747,9 @@ ul li {
   color: #fff;
   cursor: pointer;
 }
+.top__desc button:hover {
+  color: #D70B54;
+}
 .top__cards h6 {
   font-size: 14px;
   margin-bottom: 40px;
@@ -758,7 +780,7 @@ ul li {
   width: 70%;
   margin: 0 auto;
   background-color: #1B1F28;
-  padding: 25px 15px;
+  padding: 20px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
