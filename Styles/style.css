@@ -224,7 +224,7 @@ ul li {
   align-items: center;
 }
 .subline ul li {
-  font-size: 13PX;
+  font-size: 13px;
 }
 
 /*
@@ -404,7 +404,7 @@ ul li {
   margin-top: 4px;
 }
 .expertise__left--email__icon {
-  background: #22262D;
+  background: #22262d;
   padding: 9px;
   border-radius: 50%;
   display: flex;
@@ -430,7 +430,7 @@ ul li {
   margin-top: 10px;
 }
 .expertise__right__progressarea--bar__progress {
-  background: #3FABE3;
+  background: #3fabe3;
   height: 6px;
 }
 .expertise__right__progressarea--bar__progress:nth-child(1) {
@@ -496,7 +496,7 @@ ul li {
   overflow-y: hidden;
 }
 .team__members--card {
-  background-color: #32363F;
+  background-color: #32363f;
   width: 100%;
   height: 100%;
   width: 208px;
@@ -536,7 +536,7 @@ ul li {
 .team__members--card:nth-child(8) {
   display: flex;
   flex-direction: column;
-  background-color: #32363F;
+  background-color: #32363f;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -700,7 +700,7 @@ ul li {
   color: #B4B7BE;
 }
 .newsletter__body--subscribe button {
-  background-color: #44E8F2;
+  background-color: #44e8f2;
   padding: 10px 20px;
   border: 0;
   outline: none;
@@ -736,7 +736,7 @@ ul li {
 .top__desc p {
   margin: 30px 0;
   font-size: 15px;
-  color: #AFB2B8;
+  color: #afb2b8;
 }
 .top__desc button {
   display: flex;
@@ -766,7 +766,7 @@ ul li {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #AFB2B8;
+  color: #afb2b8;
 }
 .top__cards ul li:hover {
   color: #D70B54;
