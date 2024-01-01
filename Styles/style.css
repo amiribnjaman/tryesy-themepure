@@ -141,6 +141,7 @@ ul li {
   margin-top: 35px;
   display: flex;
   gap: 15px;
+  cursor: pointer;
 }
 .banner .button button {
   background: transparent;
@@ -151,10 +152,12 @@ ul li {
   outline: none;
   align-items: center;
   cursor: pointer;
+  z-index: 100;
 }
 .banner .button__view {
   border: 1px solid #fff;
   padding: 10px 15px;
+  cursor: pointer;
 }
 .banner .button__contact {
   border: 0;
@@ -629,6 +632,7 @@ ul li {
 }
 .newsletter__body h3 {
   font-size: 30px;
+  margin: 25px 0;
 }
 .newsletter__body h3 span {
   color: #EDF054;
@@ -727,21 +731,28 @@ ul li {
   padding: 25px 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .copyright__socialicon {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  align-items: center;
 }
 .copyright__socialicon p {
   font-size: 14px;
   color: #828386;
 }
-.copyright__socialicon img {
-  width: 19px;
-  height: 19px;
-  padding: 5px;
-  background-color: #fff;
-  opacity: 6%;
+.copyright__socialicon svg {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #2b2e36;
+  color: #5c5e63;
+  border-radius: 50%;
+}
+.copyright__socialicon svg:hover {
+  background-color: #D70B54;
   color: #fff;
 }
 .copyright__content {

@@ -141,6 +141,7 @@ ul li{
         margin-top: 35px;
         display: flex;
         gap: 15px;
+        cursor: pointer;
 
         button{
             background: transparent;
@@ -151,11 +152,13 @@ ul li{
             outline: none;
             align-items: center;
             cursor: pointer;
+            z-index: 100;
         }
 
         &__view{
             border: 1px solid $primary_textColor;
             padding: 10px 15px;
+            cursor: pointer;
         }
         &__contact{
             border: 0;
@@ -714,6 +717,7 @@ ul li{
 
         h3{
             font-size: 30px;
+            margin: 25px 0;
             span{
                 color: $third_backgroundColor;
             }
@@ -761,23 +765,24 @@ ul li{
 * 
 * FOOTER TOP SECTION
 */
-.top{ // FOOTER TOP SECTION
+.top {
+    // FOOTER TOP SECTION
     width: $body_content_width;
     margin: 30px auto 50px;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(5, 1fr);
 
-    &__desc{
+    &__desc {
         grid-column: span 2;
 
-        p{
+        p {
             margin: 30px 0;
             font-size: 13px;
             color: #AFB2B8;
         }
 
-        button{
+        button {
             display: flex;
             gap: 10px;
             background: transparent;
@@ -788,25 +793,27 @@ ul li{
         }
     }
 
-    &__cards{
-        h6{
+    &__cards {
+        h6 {
             font-size: $paragraph_fontSize;
             margin-bottom: 40px;
             margin-left: 7px;
         }
 
-        ul{
+        ul {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            li{
+
+            li {
                 font-size: 14px;
                 display: flex;
                 align-items: center;
                 gap: 7px;
                 color: #AFB2B8;
             }
-            li:hover{
+
+            li:hover {
                 color: #D70B54;
                 cursor: pointer;
             }
@@ -826,23 +833,30 @@ ul li{
     padding: 25px 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &__socialicon{
         display: flex;
-        gap: 20px;
+        gap: 15px;
+        align-items: center;
 
         p{
             font-size: 14px;
             color: #828386;
         }
 
-        img{
-            width: 19px;
-            height: 19px;
-            padding: 5px;
-            background-color: $primary_textColor;
-            opacity: 6%;
-            color: $primary_textColor;
+        svg{
+            width: 30px;
+            height: 30px;
+            padding: 8px;
+            cursor: pointer;
+            background-color: #2b2e36;
+            color: #5c5e63;
+            border-radius: 50%;
+        }
+        svg:hover{
+            background-color: #D70B54;
+                color: #fff;
         }
     }
 
